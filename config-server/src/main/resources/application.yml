@@ -1,0 +1,18 @@
+server:
+  port: 8000
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/F-H-Gan/junyufr
+          search-paths: spring-demo
+          username: F-H-Gan
+          password: mm130707
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
